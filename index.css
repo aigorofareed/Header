@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.none {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 1em 0;
+}
+
+nav {
+    display: none;
+}
+
+.logo {
+    padding-left: 7vw;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    padding-right: 7vw;
+}
+
+@media screen and (min-width:800px) {
+    .icon{
+        display: none;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+    }
+}
