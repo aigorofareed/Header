@@ -16,6 +16,7 @@ header {
     z-index: 999;
     width: 100%;
     padding: 1em 0;
+    background-color: #ffffff;
 }
 
 nav {
@@ -32,17 +33,90 @@ nav {
 a {
     text-decoration: none;
 }
+nav a{
+    color: rgba(21, 12, 33, 0.59);
+}
+nav a:hover{
+    border-bottom: 5px solid rgba(21, 12, 33, 0.59);
+    color: rgba(21, 12, 33, 0.59);
+}
 
 .icon {
     padding-right: 7vw;
 }
-
+.linkButton{
+    text-decoration: none;
+    border: none;
+    border: 3px solid rgba(21, 12, 33, 0.59);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    border-radius: 10px;
+    color: rgba(21, 12, 33, 0.59)
+}
+.linkButton:hover{
+    border: none;
+    border: 3px solid rgba(21, 12, 33, 0.59);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    border-radius: 10px;
+}
+section{
+    display: flex;
+    padding: 4vw;
+}
+h1{
+    font-weight: 600;
+    font-size: 4.5vw;
+}
+p{
+    font-size: 1.25vw;
+    font-weight: 400;
+    color: #150c2196;
+    text-align: center;
+}
+.para{
+    max-width: 100%;
+    text-align: center;
+}
+.under{
+    display: flex;
+    flex-direction: column;
+   
+}
+img{
+    padding: 20px;
+}
+.button{
+    background-color: #150c21;
+    text-align: center;
+    text-decoration: none;
+    border: 4px solid #150c21;
+    color: #ffffff;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin: 8vh 0;
+    padding:10px 82.88px;
+}
+.image{
+    width: 20px;
+}
+.row{
+    display: flex;
+}
 @media screen and (min-width:800px) {
-    .icon{
+    .icon {
         display: none;
     }
-    nav{
+
+    nav {
         display: flex;
-        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 7vw;
+        width: 50%;
     }
 }
